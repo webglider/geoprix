@@ -32,7 +32,7 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
         <script type="text/javascript">
-            window.onload = GetMap;
+            document.addEventListener('deviceready', GetMap, false);
 
         var bmKey = "At8aV42UAUR1zZ5hWJnj8LOF83KHrUIM6_4COre2mZoQd03KPNA5yCXiXeDbvK8B";
         var map = null;
